@@ -57,3 +57,9 @@ if (a3 >= b3) {
 }
 
 // Logical Operators
+// Statements
+// Array
+// String
+// Dates
+// Maths
+// DOM
