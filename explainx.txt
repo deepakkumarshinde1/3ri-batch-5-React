@@ -1,0 +1,24 @@
+Javascript ==> 1994 (Netscape)
+ES (ECMA Script) ECMA
+
+ES5 (2009) & ES6 (2015) (ES7 ES8)
+
+On Browser or Without A Browser (Node JS)
+2023 
+    Web App,
+    Server App,
+    Desktop,
+    Mobile,
+    ML App
+
+Object Base (95% is object)
+    OOP
+    Prod
+    functional
+
+Run ==> C , C++ ,Java ==> compiler ==> test (error) ==> (byte) ===> run code
+Run ==> PHP , python , javascript ==> interpreter ==> run (runtime error check)
+
+Browser ==> Engine (Chrome => V8) (Firefox ==> SpiderMonkey)
+
+==> Browser (html or .js)
