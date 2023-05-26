@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input[type = "text"]{
+      border:2px solid blueviolet;
+    }
+  </style>
+</head>
+<body>
+  <form  action="./pract2.html" onsubmit="return onSubmitForm()">
+    <label for="">Name</label>
+    <input type="text" name="textName" id="text">
+    <input type="submit" value="Submit">
+  </form>
+
+  <script>
+    
+    function onSubmitForm(){
+      let textName = document.getElementById("text").value;
+      console.log(textName);
+      if (textName == 0 || textName==null){
+        document.querySelector("#text").style.border = "2px solid red";
+        return false;
+      }
+    }
+  </script>
+
+</body>
+</html>

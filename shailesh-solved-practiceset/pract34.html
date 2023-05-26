@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let a = 11, b=24, c=14;
+    let a1 = a.toString();
+    let b1 = b.toString();
+    let c1 = c.toString();
+
+    function checkTheRightMost(){
+    if(a1.slice(-1)===b1.slice(-1) || 
+       a1.slice(-1)===c1.slice(-1)||
+       b1.slice(-1)===c1.slice(-1)){
+        return true;
+       }else
+       {
+        return false;
+       }
+      }
+
+      console.log(checkTheRightMost());
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 1,2,4
+    // if 1 > 2 && 1>4 then 1 is greater
+    // if 2>1  && 2>4 then 2 is greater
+    // if 4>1 && 4>1 then 4 is greater
+
+    let x = 12;
+    let y = 14;
+    let z = 2;
+
+    if(x>y && x>z){
+      console.log(`${x} is greater`);
+    }
+    else if(y>x && y>z){
+      console.log(`${y} is greater`);
+    }
+    else if(z>x && z>y){
+      console.log(`${z} is greater`);
+    }else{
+      console.log("enter valid number");
+    }
+  </script>
+</body>
+</html>

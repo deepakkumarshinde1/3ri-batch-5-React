@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    let num1 = parseInt(prompt("Num 1"));
+    let num2 = parseInt(prompt("Num 2"));
+
+    if(num1>0 && num2>0){
+      console.log("both are positive");
+    }
+    else if(num1>0 && num2<0){
+      console.log("num1 is positive and num2 is negative");
+    }else if(num1<0 && num2>0){
+      console.log("num1 is negative and num2 is positive");
+    }else if(num1==0 && num2==0){
+      console.log("neutral numbers");
+    }else if(num1<0 && num2<0){
+      console.log("both are negative");
+    }else{
+      console.log("enter valid number");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let str = 'Ja';
+    let result = str.trim('');
+    let convertStr = result.split('');
+    
+
+    console.log(convertStr);
+    if(convertStr.length>=2 && convertStr.length<=4){
+      console.log('character are in between');
+    }else if(convertStr.length<2){
+      console.log('character are less then 2 char');
+    }else if(convertStr.length>4){
+      console.log('character are greater then 4 char');
+    }
+  </script>
+</body>
+</html>

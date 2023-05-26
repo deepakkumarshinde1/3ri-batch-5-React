@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+   
+ let totalMarksOfStudent = 95;
+ let examination = '';
+ 
+ function checkResult(examination, totalMarksOfStudent){
+  if(examination === 'final Exam'){
+    console.log("in final examination..");
+  if(totalMarksOfStudent>=90){
+    grade = 'A+';
+    console.log(`you get ${grade} grade`);
+    return true;
+  }else{
+    return false;
+  }
+}else if(totalMarksOfStudent>=89 && totalMarksOfStudent<=100){ console.log("in other examination..");
+  grade = 'A+';
+  console.log(`you get ${grade} grade`);
+  return true;
+}else{
+  return false;
+}
+ }
+
+ console.log(checkResult(examination, totalMarksOfStudent));
+  </script>
+</body>
+</html>

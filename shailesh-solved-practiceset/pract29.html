@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let x = 88;
+    let y = 89;
+
+    let checkTheNearest = 100-x;
+    let checkTheNearestAnother = 100-y;
+
+    if(checkTheNearest>checkTheNearestAnother){
+      console.log(`${y} is near`);
+    }
+    else if(checkTheNearest === checkTheNearestAnother){
+      console.log("Both are near");
+    }
+    else{
+      console.log(`${x} is near`);
+    }
+
+  </script>
+</body>
+</html>

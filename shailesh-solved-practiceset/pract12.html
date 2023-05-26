@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>Temperature ::</p>
+  <button id="farhenite" onclick="celciusToFarenhite()">Convert to F</button>
+  <button id="celcius" onclick="farenhiteToCelcius()">Convert to C</button>
+
+  <script>
+    let temperature = parseInt(prompt("Enter The Temperature"));
+    document.querySelector("p").innerHTML += " "+temperature;
+
+    function celciusToFarenhite(){
+      let farhenite = (temperature*9/5)+32;
+      document.querySelector("p").innerHTML = farhenite; 
+    }
+
+    function farenhiteToCelcius(){
+      let celcius = (temperature-32) * 5/9;
+      document.querySelector("p").innerHTML = celcius; 
+    }
+  </script>
+</body>
+</html>
