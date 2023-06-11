@@ -30,3 +30,14 @@ circle.radius = 21;
 
 console.log(circle.radius);
 console.log(circle.dia);
+
+// arrow functions
+// What is react
+// What is node
+// What is npm
+// basic command npm
+// download & install node js
+
+//**  what is react state
+//**  what is react props
+//**  what is react component
