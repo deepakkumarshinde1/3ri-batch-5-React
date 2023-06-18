@@ -1,0 +1,98 @@
+Java => Spring Boot (MVC)
+Python => DJango , Flask (MVC)
+PhP ==> Laravel (MVC)
+C# => .Net (MVC)
+Javascript => Express Js (MVC) , Angular (MVVM) , Vue
+
+M = Model , V = View , C = Controller
+
+React Js  (View) => React is library of JavaScript , User Interface
+
+# React Works On State Mechanism
+# React Only refresh only portion of the page which required to update.
+# React application are single page applications
+# React syntactic events
+# React has its own DOM ==> VDom (it improve application performance)
+# In react we only have one way data binding.
+# In React we can performance Server Side Rendering (SSR) and Client Side Rendering (CSR)
+# React can be use with or without class logic
+# React can be customized. (attached a library)
+# Testing react application is a simple.
+# Migration from one version to other is easy in react 
+
+
+// boilerplate code project (facebook)
+
+work with react for development environment we need Node JS
+
+Node JS as development server for use
+
+development (development) ==> production (we don't need node js)
+
+package ==> lib , framework , single file
+NPM  => Node Package Manager ==> add , delete , update , published , unpublished
+NPX => Node Package Executor => add ==> run ==> delete
+
+to install react app bellow is a command
+project-name ==> small case , it must not have space
+npx create-react-app project-name
+
+Installing 
+    react ==> core library,
+    react-dom ==> browser dev,
+    react-native ==> Mobil Development
+    react-scripts ==> runs react app , test react , build react aoo
+        with cra-template...
+
+react states , props , components , map in react
+
+public
+    .html
+    images
+    .icon
+    .json
+    .txt
+src
+    css
+    js
+    background_images
+    fonts
+    testing
+package.json
+
+src ==> entry file (index.js)
+
+
+import 
+    ==> Object
+
+function / class
+
+export 
+    ==> Object
+    ==> function/string/number/array/class
+
+App.js => Component 
+    :: Basic Building Block
+    :: Component must start with capital latter
+    :: Component export 
+    :: In file you may have multiple components
+
+    import (option)
+    function/class
+    export 
+
+    function ==> it must have a return keyword
+        # in return that is not a html element
+        # JSX ==> Javascript XML
+        # JSX rule
+            # JSX will always have one parent element
+            # IF you don't want to use JSX element you can use <></> i.e JSX fragment
+            # class ==> className
+            # for ==> htmlFor
+            # if you want to use javascript code ==> { js code }
+            # if else are only posable by ternary operator (cond) ? true : false;
+            # loop ==> map method od array
+            # style="background-color:red;color:green"  ==>  style={{ backgroundColor:'red',color:'green' }}
+
+
