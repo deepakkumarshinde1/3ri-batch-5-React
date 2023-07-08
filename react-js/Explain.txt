@@ -95,4 +95,45 @@ App.js => Component
             # loop ==> map method od array
             # style="background-color:red;color:green"  ==>  style={{ backgroundColor:'red',color:'green' }}
 
+Hooks
+States & props
+Single Source Of Truth
 
+
+ml ---> ms
+mr ---> me
+
+pl --> ps
+pr --> pe
+
+panel --> card
+--> Display-1 ... Display-5
+
+class ==> className
+for ==> htmlFor
+
+Hooks ==> in-build 
+      ==> custom hooks
+      ==> 3rd party hooks
+    
+    hooks always starts with ==> useName 
+    hooks can only be use in function component
+
+if you want to do the data mang in react component ==> state
+when ever state changes ===> component re-renders
+states are mutable in nature
+in FN component ===> hooks ===> useState()
+
+useState ==> in return ==> [value,updateDataFunction]
+value can be ==> a number , a string , a [] , a {} , a boolean
+updateDataFunction ==> function
+
+// ToDo List
+    Input 
+    Button
+
+    list 
+        title
+        isCompleted
+        deleteA todo
+        editTodo
