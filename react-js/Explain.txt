@@ -137,3 +137,6 @@ updateDataFunction ==> function
         isCompleted
         deleteA todo
         editTodo
+
+# if we want to use a loop in react we use a map method of array
+# in react for "if .. else" we use ternary operator ==>   (condition) ? trueCode : falseCode
