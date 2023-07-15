@@ -140,3 +140,48 @@ updateDataFunction ==> function
 
 # if we want to use a loop in react we use a map method of array
 # in react for "if .. else" we use ternary operator ==>   (condition) ? trueCode : falseCode
+
+# modularizing application
+# props
+# api call
+
+
+parent === props ===> child
+props are to send data from parent to child
+props are readonly in nature
+
+
+props ==> properties
+props like html attributes
+
+Logic ==> app.js (centralized) ==> single source of true
+
+single source of true
+    ==> props drilling (not suggested)
+    ==> Context API (suggested on project complexity)
+    ==> Redux (suggested on project complexity)
+ child component don't have logic
+
+Server === server data ===> Browser application (flipkart)
+Server === server data ===> Mobile application (whats app)
+Server === server data ===> Desktop application  (vs code extensions)
+Server === server data ===> Server (IRCTC , UIP , Payment Gateway)
+
+API ==> Application Programming Interface 
+Server ===> REST API ==> Client
+REST ==> Representational State Transfer
+
+React Lifecycle Class ==>
+    ==> Initialization (memory allocation)
+    ==> Load ==> Mounting ==>Only Once
+    ==> Update ==> Change ==> Every Time On State Change
+    ==> Unload ==> Unmounting ==> Only Once
+
+React Lifecycle Functional ==> Hook ==> useEffect
+
+    useEffect ==> hooks run on side effect of component i.e when state changes
+    useEffect(cnFunction, []) []:: Dependency array
+    ==> Initialization (memory allocation) 
+    ==> Load ==> Mounting ==>Only Once ==> useEffect(()={}, [])
+    ==> Update ==> Change ==> Every Time On State Change
+    ==> Unload ==> Unmounting ==> Only Once
