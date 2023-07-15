@@ -1,4 +1,8 @@
 import { useState } from "react";
+import Header from "./components/Header";
+import InputArea from "./components/InputArea";
+import TodoList from "./components/TodoList";
+import Users from "./components/Users";
 
 const App = () => {
   const [todoList, setTodoList] = useState([]);
@@ -55,93 +59,20 @@ const App = () => {
       <section className="container-fluid">
         <section className="row">
           <section className="col-lg-6 col-10 m-auto">
-            <p className="text-center h3 text-primary mt-2">Todo App</p>
-            <section className="input-group">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Enter Todo Name"
-                onChange={updateInputChange}
-                value={todoInput}
-              />
-              {mode === -1 ? (
-                <button
-                  onClick={saveNewTodo}
-                  className="btn btn-success input-group-text "
-                >
-                  <i className="fa fa-floppy-o me-2" aria-hidden="true"></i>
-                  Save
-                </button>
-              ) : (
-                <button
-                  onClick={updateTodoDetails}
-                  className="btn btn-primary input-group-text "
-                >
-                  <i className="fa fa-floppy-o me-2" aria-hidden="true"></i>
-                  Update
-                </button>
-              )}
-            </section>
-            <section>
-              <ul className="list-group mt-3">
-                {todoList.map((todo, index) => {
-                  return (
-                    <li key={index} className="list-group-item">
-                      <div className="row gap-5">
-                        <section className="form-check col-9">
-                          <input
-                            type="checkbox"
-                            className="form-check-input"
-                            onChange={() => markAsCompleted(index)}
-                            checked={todo.isCompleted}
-                            disabled={todo.isCompleted}
-                          />
-                          <span
-                            className={
-                              todo.isCompleted ? "fst-italic text-danger" : null
-                            }
-                          >
-                            {todo.title}
-                          </span>
-                        </section>
-                        {todo.isCompleted === false ? (
-                          <section className="col-2">
-                            <button className="btn btn-sm btn-danger me-1">
-                              <i className="fa fa-trash" aria-hidden="true"></i>
-                            </button>
-                            <button
-                              className="btn btn-sm btn-info"
-                              onClick={() => setUpdate(index)}
-                            >
-                              <i
-                                className="fa fa-pencil-square-o"
-                                aria-hidden="true"
-                              ></i>
-                            </button>
-                          </section>
-                        ) : null}
-                      </div>
-                    </li>
-                  );
-                })}
-                {/* <li className="list-group-item">
-                  <div className="row gap-5">
-                    <section className="form-check col-12">
-                      <input
-                        type="checkbox"
-                        className="form-check-input"
-                        disabled
-                      />
-                      <span className=" fst-italic text-danger">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Officia sit dolor consectetur repellendus sunt
-                        velit,
-                      </span>
-                    </section>
-                  </div>
-                </li> */}
-              </ul>
-            </section>
+            <Users />
+            <Header />
+            <InputArea
+              todoInput={todoInput}
+              updateInputChange={updateInputChange}
+              mode={mode}
+              saveNewTodo={saveNewTodo}
+              updateTodoDetails={updateTodoDetails}
+            />
+            <TodoList
+              todoList={todoList}
+              markAsCompleted={markAsCompleted}
+              setUpdate={setUpdate}
+            />
           </section>
         </section>
       </section>
