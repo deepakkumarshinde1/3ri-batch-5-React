@@ -2,7 +2,6 @@ import { useState } from "react";
 import Header from "./components/Header";
 import InputArea from "./components/InputArea";
 import TodoList from "./components/TodoList";
-import Users from "./components/Users";
 
 const App = () => {
   const [todoList, setTodoList] = useState([]);
@@ -59,7 +58,6 @@ const App = () => {
       <section className="container-fluid">
         <section className="row">
           <section className="col-lg-6 col-10 m-auto">
-            <Users />
             <Header />
             <InputArea
               todoInput={todoInput}

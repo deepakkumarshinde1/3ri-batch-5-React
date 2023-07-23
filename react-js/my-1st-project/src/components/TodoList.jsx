@@ -1,4 +1,6 @@
+import { memo } from "react";
 const TodoList = (props) => {
+  console.log("todo-list component");
   let { todoList, markAsCompleted, setUpdate } = props;
   return (
     <>
@@ -50,4 +52,4 @@ const TodoList = (props) => {
   );
 };
 
-export default TodoList;
+export default memo(TodoList);

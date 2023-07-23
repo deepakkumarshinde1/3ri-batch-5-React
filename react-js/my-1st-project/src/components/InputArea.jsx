@@ -1,4 +1,5 @@
 const InputArea = (props) => {
+  console.log("input area component");
   let { updateTodoDetails, updateInputChange, todoInput, mode, saveNewTodo } =
     props;
   return (
