@@ -185,3 +185,23 @@ React Lifecycle Functional ==> Hook ==> useEffect
     ==> Load ==> Mounting ==>Only Once ==> useEffect(()={}, [])
     ==> Update ==> Change ==> Every Time On State Change
     ==> Unload ==> Unmounting ==> Only Once
+
+
+Routings (react-router-dom)
+    BrowserRouter
+    Routes
+    Route
+    Outlet
+    Link
+    NavLink
+    Navigate
+
+    useParams
+    useParamsString
+    useNavigate
+
+
+Single Source Of Truth ==>  
+    Props Drilling ==> Avoid
+    Context API (Todo)
+    Redux 
