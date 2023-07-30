@@ -203,5 +203,5 @@ Routings (react-router-dom)
 
 Single Source Of Truth ==>  
     Props Drilling ==> Avoid
-    Context API (Todo)
+   # Context API (Todo) pending
     Redux 

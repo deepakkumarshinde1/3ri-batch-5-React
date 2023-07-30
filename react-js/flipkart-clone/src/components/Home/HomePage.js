@@ -1,18 +1,15 @@
-import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { getCategoryList } from "../../redux/ProductSlice";
+import { useDispatch, useSelector } from "react-redux";
 
 function HomePage() {
+  let dispatch = useDispatch();
   let navigate = useNavigate();
-  let [category, setCategory] = useState([]);
-
-  let getCategoryList = async () => {
-    let { data } = await axios.get("http://localhost:3003/categories");
-    setCategory(data);
-  };
+  let { category } = useSelector((state) => state.products);
 
   useEffect(() => {
-    getCategoryList();
+    dispatch(getCategoryList());
   }, []);
   return (
     <>
@@ -456,7 +453,7 @@ function HomePage() {
       <div
         className="modal fade"
         id="exampleModal"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
