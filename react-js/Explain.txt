@@ -1,0 +1,207 @@
+Java => Spring Boot (MVC)
+Python => DJango , Flask (MVC)
+PhP ==> Laravel (MVC)
+C# => .Net (MVC)
+Javascript => Express Js (MVC) , Angular (MVVM) , Vue
+
+M = Model , V = View , C = Controller
+
+React Js  (View) => React is library of JavaScript , User Interface
+
+# React Works On State Mechanism
+# React Only refresh only portion of the page which required to update.
+# React application are single page applications
+# React syntactic events
+# React has its own DOM ==> VDom (it improve application performance)
+# In react we only have one way data binding.
+# In React we can performance Server Side Rendering (SSR) and Client Side Rendering (CSR)
+# React can be use with or without class logic
+# React can be customized. (attached a library)
+# Testing react application is a simple.
+# Migration from one version to other is easy in react 
+
+
+// boilerplate code project (facebook)
+
+work with react for development environment we need Node JS
+
+Node JS as development server for use
+
+development (development) ==> production (we don't need node js)
+
+package ==> lib , framework , single file
+NPM  => Node Package Manager ==> add , delete , update , published , unpublished
+NPX => Node Package Executor => add ==> run ==> delete
+
+to install react app bellow is a command
+project-name ==> small case , it must not have space
+npx create-react-app project-name
+
+Installing 
+    react ==> core library,
+    react-dom ==> browser dev,
+    react-native ==> Mobil Development
+    react-scripts ==> runs react app , test react , build react aoo
+        with cra-template...
+
+react states , props , components , map in react
+
+public
+    .html
+    images
+    .icon
+    .json
+    .txt
+src
+    css
+    js
+    background_images
+    fonts
+    testing
+package.json
+
+src ==> entry file (index.js)
+
+
+import 
+    ==> Object
+
+function / class
+
+export 
+    ==> Object
+    ==> function/string/number/array/class
+
+App.js => Component 
+    :: Basic Building Block
+    :: Component must start with capital latter
+    :: Component export 
+    :: In file you may have multiple components
+
+    import (option)
+    function/class
+    export 
+
+    function ==> it must have a return keyword
+        # in return that is not a html element
+        # JSX ==> Javascript XML
+        # JSX rule
+            # JSX will always have one parent element
+            # IF you don't want to use JSX element you can use <></> i.e JSX fragment
+            # class ==> className
+            # for ==> htmlFor
+            # if you want to use javascript code ==> { js code }
+            # if else are only posable by ternary operator (cond) ? true : false;
+            # loop ==> map method od array
+            # style="background-color:red;color:green"  ==>  style={{ backgroundColor:'red',color:'green' }}
+
+Hooks
+States & props
+Single Source Of Truth
+
+
+ml ---> ms
+mr ---> me
+
+pl --> ps
+pr --> pe
+
+panel --> card
+--> Display-1 ... Display-5
+
+class ==> className
+for ==> htmlFor
+
+Hooks ==> in-build 
+      ==> custom hooks
+      ==> 3rd party hooks
+    
+    hooks always starts with ==> useName 
+    hooks can only be use in function component
+
+if you want to do the data mang in react component ==> state
+when ever state changes ===> component re-renders
+states are mutable in nature
+in FN component ===> hooks ===> useState()
+
+useState ==> in return ==> [value,updateDataFunction]
+value can be ==> a number , a string , a [] , a {} , a boolean
+updateDataFunction ==> function
+
+// ToDo List
+    Input 
+    Button
+
+    list 
+        title
+        isCompleted
+        deleteA todo
+        editTodo
+
+# if we want to use a loop in react we use a map method of array
+# in react for "if .. else" we use ternary operator ==>   (condition) ? trueCode : falseCode
+
+# modularizing application
+# props
+# api call
+
+
+parent === props ===> child
+props are to send data from parent to child
+props are readonly in nature
+
+
+props ==> properties
+props like html attributes
+
+Logic ==> app.js (centralized) ==> single source of true
+
+single source of true
+    ==> props drilling (not suggested)
+    ==> Context API (suggested on project complexity)
+    ==> Redux (suggested on project complexity)
+ child component don't have logic
+
+Server === server data ===> Browser application (flipkart)
+Server === server data ===> Mobile application (whats app)
+Server === server data ===> Desktop application  (vs code extensions)
+Server === server data ===> Server (IRCTC , UIP , Payment Gateway)
+
+API ==> Application Programming Interface 
+Server ===> REST API ==> Client
+REST ==> Representational State Transfer
+
+React Lifecycle Class ==>
+    ==> Initialization (memory allocation)
+    ==> Load ==> Mounting ==>Only Once
+    ==> Update ==> Change ==> Every Time On State Change
+    ==> Unload ==> Unmounting ==> Only Once
+
+React Lifecycle Functional ==> Hook ==> useEffect
+
+    useEffect ==> hooks run on side effect of component i.e when state changes
+    useEffect(cnFunction, []) []:: Dependency array
+    ==> Initialization (memory allocation) 
+    ==> Load ==> Mounting ==>Only Once ==> useEffect(()={}, [])
+    ==> Update ==> Change ==> Every Time On State Change
+    ==> Unload ==> Unmounting ==> Only Once
+
+
+Routings (react-router-dom)
+    BrowserRouter
+    Routes
+    Route
+    Outlet
+    Link
+    NavLink
+    Navigate
+
+    useParams
+    useParamsString
+    useNavigate
+
+
+Single Source Of Truth ==>  
+    Props Drilling ==> Avoid
+   # Context API (Todo) pending
+    Redux 

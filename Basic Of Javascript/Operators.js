@@ -57,6 +57,30 @@ if (a3 >= b3) {
 }
 
 // Logical Operators
+let a4 = 40;
+let b4 = 10;
+let c4 = 40;
+
+// and ==> &&
+// or ==> ||
+// not ==> !
+// NOR ==> !(l || r)
+// NAND ==> !(l && r)
+
+// not of false is true
+// !false = true
+// !true = false
+if (a4 === b4 && b4 === c4) {
+  console.log("and is true");
+} else {
+  console.log("and is false");
+}
+
+if (a4 === b4 || b4 === c4) {
+  console.log("or is true");
+} else {
+  console.log("or is false");
+}
 // Statements
 // Array
 // String

@@ -1,0 +1,27 @@
+.js (Browser , React , Node Js)
+.jsx (React)
+.mjs (node js)
+
+Basic Of Javascript
+    variable ==> Store data temp 
+    type types
+    function 
+    operators
+    loop 
+    array 
+    jsObject/Object
+
+    DOM 
+    DOM Events
+    DOM Manipulations (To Change)
+
+Advance Of Javascript
+
+Node Js (basic intro)
+
+React JS
+Advance React JS
+Redux 
+Redux Saga
+Testing Application By Jasmine / React Testing Lib
+Deployment 
