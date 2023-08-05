@@ -132,7 +132,11 @@ function HomePage() {
             {category.map((category_item) => {
               return (
                 <div
-                  onClick={() => navigate("/search")}
+                  onClick={() =>
+                    navigate(
+                      `/search?id=${category_item.id}&name=${category_item.name}`
+                    )
+                  }
                   className="items text-center"
                   key={category_item.id}
                 >

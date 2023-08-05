@@ -1,7 +1,10 @@
 import axios from "axios";
-const BASE_URL = "http://localhost:3003";
+const BASE_URL = "http://localhost:3003/api";
 
 export const getCategoryService = async () => {
-  console.log("service");
   return axios.get(BASE_URL + "/categories");
+};
+
+export const getProductsService = async (id) => {
+  return axios.get(BASE_URL + "/get-products/" + id);
 };
