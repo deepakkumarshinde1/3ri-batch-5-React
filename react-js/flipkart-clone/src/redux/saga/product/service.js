@@ -8,3 +8,7 @@ export const getCategoryService = async () => {
 export const getProductsService = async (id) => {
   return axios.get(BASE_URL + "/get-products/" + id);
 };
+
+export const getProductService = async (id) => {
+  return axios.get(BASE_URL + "/get-product/" + id);
+};

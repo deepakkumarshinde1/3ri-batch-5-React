@@ -1,6 +1,10 @@
 import { takeLatest } from "redux-saga/effects";
-import { getCategoryList, getProducts } from "../../ProductSlice";
-import { getCategoryHandler, getProductsHandler } from "./handler";
+import { getCategoryList, getProduct, getProducts } from "../../ProductSlice";
+import {
+  getCategoryHandler,
+  getProductHandler,
+  getProductsHandler,
+} from "./handler";
 
 export function* getCategoryWatcher() {
   console.log("watcher");
@@ -10,4 +14,9 @@ export function* getCategoryWatcher() {
 export function* getProductsWatcher() {
   console.log("watcher");
   yield takeLatest(getProducts.type, getProductsHandler);
+}
+
+export function* getProductWatcher() {
+  console.log("watcher");
+  yield takeLatest(getProduct.type, getProductHandler);
 }

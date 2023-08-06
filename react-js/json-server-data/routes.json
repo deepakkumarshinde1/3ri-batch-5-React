@@ -1,4 +1,5 @@
 {
   "/api/categories": "/categories",
-  "/api/get-products/:id": "/products?c_id=:id"
+  "/api/get-products/:id": "/products?c_id=:id",
+  "/api/get-product/:id": "/products/:id"
 }

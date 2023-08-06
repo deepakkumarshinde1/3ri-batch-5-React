@@ -7,10 +7,14 @@
  * */
 
 import { all } from "redux-saga/effects";
-import { getCategoryWatcher, getProductsWatcher } from "./product/watcher";
+import {
+  getCategoryWatcher,
+  getProductWatcher,
+  getProductsWatcher,
+} from "./product/watcher";
 
 export function* rootSaga() {
   console.log("root");
-  let list = [getCategoryWatcher(), getProductsWatcher()];
+  let list = [getCategoryWatcher(), getProductsWatcher(), getProductWatcher()];
   yield all(list);
 }
