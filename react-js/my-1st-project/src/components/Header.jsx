@@ -1,10 +1,15 @@
 import { memo } from "react";
+import { useUserContext } from "../context/UserContext";
 
-const Header = () => {
-  console.log("header component");
+const Header = ({ text }) => {
+  let { name } = useUserContext();
   return (
     <>
-      <p className="text-center h3 text-primary mt-2">Todo App</p>
+      <h1 className="text-center h3 text-primary mt-2">
+        {text} {name}
+      </h1>
+      {/* <h1>Hello Word</h1>
+      <h1>Hello Word</h1> */}
     </>
   );
 };

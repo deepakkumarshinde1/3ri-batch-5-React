@@ -1,7 +1,8 @@
 import { memo } from "react";
-const TodoList = (props) => {
+import { useToDoContext } from "../context/ToDoContext";
+const TodoList = () => {
   console.log("todo-list component");
-  let { todoList, markAsCompleted, setUpdate } = props;
+  let { todoList, markAsCompleted, setUpdate } = useToDoContext();
   return (
     <>
       <section>

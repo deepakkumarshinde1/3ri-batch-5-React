@@ -1,19 +1,16 @@
-const InputArea = (props) => {
-  console.log("input area component");
-  let { updateTodoDetails, updateInputChange, todoInput, mode, saveNewTodo } =
-    props;
+import { useToDoContext } from "../context/ToDoContext";
+import Input from "./Input";
+
+const InputArea = () => {
+  let { updateTodoDetails, mode, saveNewTodo } = useToDoContext();
+
   return (
     <>
       <section className="input-group">
-        <input
-          type="text"
-          className="form-control"
-          placeholder="Enter Todo Name"
-          onChange={updateInputChange}
-          value={todoInput}
-        />
+        <Input />
         {mode === -1 ? (
           <button
+            data-testid="submit_button"
             onClick={saveNewTodo}
             className="btn btn-success input-group-text "
           >
@@ -22,6 +19,7 @@ const InputArea = (props) => {
           </button>
         ) : (
           <button
+            data-testid="submit_button"
             onClick={updateTodoDetails}
             className="btn btn-primary input-group-text "
           >
