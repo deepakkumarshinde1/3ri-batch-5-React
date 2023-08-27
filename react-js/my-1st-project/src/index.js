@@ -5,13 +5,16 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import IndexContext from "./context/Index";
+import { BrowserRouter } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.Fragment>
-    <IndexContext>
-      <App />
-    </IndexContext>
+    <BrowserRouter>
+      <IndexContext>
+        <App />
+      </IndexContext>
+    </BrowserRouter>
   </React.Fragment>
 );
 
